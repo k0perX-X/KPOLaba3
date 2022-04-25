@@ -1,0 +1,36 @@
+﻿<Window x:Class="KPOLaba3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Часы" Height="350" Width="525" 
+        ContentRendered="Window_ContentRendered_1" 
+        SizeChanged="Window_SizeChanged">
+    <Grid ShowGridLines="True">
+        <TabControl x:Name="TabControl">
+            <TabItem x:Name="TabItemNow" Header="Компьютер" Selector.Selected="OnTabSelected">
+                <Grid x:Name="NowGrid" Background="#FFE5E5E5" Width="Auto" Height="Auto">
+                    <Image x:Name="NowClock" Stretch="Fill"></Image>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItemMoscow" Header="Москва" Selector.Selected="OnTabSelected">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="MoscowClock"></Image>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItemLondon" Header="Лондон" Selector.Selected="OnTabSelected">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="LondonClock"></Image>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItemParis" Header="Париж" Selector.Selected="OnTabSelected">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="ParisClock"></Image>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TabItemNewYork" Header="Нью-Йорк" Selector.Selected="OnTabSelected">
+                <Grid Background="#FFE5E5E5">
+                    <Image x:Name="NewYorkClock"></Image>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
